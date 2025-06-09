@@ -1,0 +1,23 @@
+O protocolo PubSub deve ser definido por cada grupo e documentado no ficheiro
+PROTOCOLO.txt. Este protocolo deve ser implementado sobre o protocolo TCP com o
+Message Broker a fazer uso do porto 5000 para estabelecer ligação com
+consumidores/produtores. Este protocolo deve incluir:
+● Mensagem de Subscrição de um tópico
+● Mensagem de Publicação num tópico
+● Mensagem de Pedido de Listagem de tópicos
+● Mensagem de Cancelamento de Subscrição de um tópico
+
+Subscrição de um tópico                     {"command" : "subscribe", "topic" : ???}
+Publicação num tópico                       {"command" : "publish", "topic" : ???}
+Pedido de Listagem de tópicos               {"command" : "request", "topic" : ???}
+Cancelamento de Subscrição de um tópico     {"command" : "cancel", "topic" : ???}
+
+SubscribeTopicMessage
+PublishTopic
+RequestTopics
+CancelTopicMessage
+
+subscribe
+publish
+request
+cancel
